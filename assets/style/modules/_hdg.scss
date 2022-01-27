@@ -1,0 +1,39 @@
+@import "../base/font";
+@import "../base/vars";
+
+.hdg {
+  @include sansSerifFont;
+}
+
+.hdg_1 {
+  font-size: $FONT_SIZE_XXL;
+  font-weight: $FONT_WEIGHT_BOLD;
+}
+
+.hdg_2 {
+  font-size: $FONT_SIZE_L;
+}
+
+.hdg_3 {
+  font-size: $FONT_SIZE_M;
+  font-weight: $FONT_WEIGHT_HEAVY;
+}
+
+.hdg_4,
+.hdg_5,
+.hdg_6 {
+  font-size: $FONT_SIZE_S;
+}
+
+.hdg-bold {
+  font-weight: $FONT_WEIGHT_BOLD;
+}
+
+.hdg-dark {
+  color: $COLOR_DARK;
+}
+
+.mix-hdg_borderBottom {
+  border-bottom: 1px solid;
+  padding-bottom: $SPACING_HALFX;
+}

@@ -12,7 +12,7 @@
     {{ $styles := resources.Get "style/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
 {{ else }}
-    {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
-    {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+    {{ $cssOpts := (dict "targetPath" "style/main.css" ) }}
+    {{ $styles := resources.Get "style/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}

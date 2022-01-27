@@ -1,0 +1,22 @@
+@import "base/vars";
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  @include sansSerifFont;
+
+  background-color: $COLOR_WHITE;
+}
+
+a {
+  color: $COLOR_SECONDARY;
+  font-size: $FONT_SIZE_XS !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $COLOR_DARK;
+  text-decoration: none;
+}

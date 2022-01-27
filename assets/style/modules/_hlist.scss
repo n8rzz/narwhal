@@ -1,0 +1,26 @@
+@import "../base/mixins";
+@import "../base/vars";
+
+.hlist {
+  @include hlist;
+
+  align-items: center;
+}
+
+.hlist > * + * {
+  margin-left: $SPACING_1X;
+}
+
+.hlist-spacious > * + * {
+  margin-left: $SPACING_2X;
+}
+
+.hlist-divided > * + * {
+  border-left: 1px solid;
+  margin-left: $SPACING_HALFX;
+  padding-left: $SPACING_HALFX;
+}
+
+.mix-hlist_center {
+  justify-content: center;
+}

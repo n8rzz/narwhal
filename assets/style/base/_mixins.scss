@@ -1,0 +1,47 @@
+@import "base/_vars";
+
+@mixin vr_1 {
+  margin-bottom: $SPACING_1X;
+}
+
+@mixin vr_2 {
+  margin-bottom: $SPACING_2X;
+}
+
+@mixin vr_3 {
+  margin-bottom: $SPACING_3X;
+}
+
+@mixin vr_4 {
+  margin-bottom: $SPACING_4X;
+}
+
+@mixin vr_5 {
+  margin-bottom: $SPACING_5X;
+}
+
+@mixin flexBetween {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin hlist($spacing: $SPACING_HALFX) {
+  display: flex;
+
+  > * + * {
+    margin-left: $spacing;
+  }
+}
+
+@mixin vlist($spacing: $SPACING_1X) {
+  > * + * {
+    margin-top: $spacing;
+  }
+}
+
+@mixin stereo {
+  @include flexBetween;
+
+  width: 100%;
+}
