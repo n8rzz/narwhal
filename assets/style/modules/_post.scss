@@ -1,0 +1,10 @@
+@import "../base/vars";
+
+.post {
+  @include vr_2;
+}
+
+.post-summary {
+  border: 1px solid;
+  padding: $SPACING_1X 0;
+}

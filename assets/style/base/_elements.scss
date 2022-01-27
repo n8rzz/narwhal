@@ -8,11 +8,11 @@ body {
   @include sansSerifFont;
 
   background-color: $COLOR_WHITE;
+  font-size: $FONT_SIZE_M;
 }
 
 a {
   color: $COLOR_SECONDARY;
-  font-size: $FONT_SIZE_XS !important;
   text-decoration: none;
 }
 
